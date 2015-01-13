@@ -1,0 +1,12 @@
+cron:
+- description: cron update database
+  url: /db/video
+  schedule: every 24 hours
+
+- description: cron update database
+  url: /db/meme
+  schedule: every 24 hours
+
+- description: cron update database
+  url: /db/eyecandy
+  schedule: every 24 hours

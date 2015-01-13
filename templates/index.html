@@ -1,0 +1,29 @@
+{% extends "templates/base.html" %}
+
+
+{% block title %}Index{% endblock %}
+
+
+{% block content %}
+
+
+  <br><br>
+  <h1 class="center">inDelhi</h1><br><br>
+  <button class="btn btn-primary publish">Publish</button><br>
+  <a href="/admin">
+    <button class="btn btn-primary" target="_blank">Edit</button>
+  </a><br><br>
+
+  {% for i in arr %}
+      <div class="post">
+        <a href="#">
+          <p class="title">{{i[0]}}</p>
+          <p class="description">{{i[1]}}</p>
+          <img class="img" src="{{i[2]}}">
+        </a>
+      </div>
+      <hr>
+  {%endfor%}
+
+
+{% endblock %}

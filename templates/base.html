@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} inDelhi</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <script src='/static/js/jquery.min.js'></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="description" content="algs.in Find interesting pictures, memes and videos to share">
+    <meta name="keywords" content="funny,meme,jokes,reddit,rage-comics,awesome-videos,documentaries,videos,video,algs,algs.in" >
+    
+  </head>
+  
+  <body>
+
+
+    <div id="container">
+        <div class="row">
+          {% block content %}{% endblock %}
+        </div>
+
+    </div>
+    
+    <div id="footer"></div>
+
+  </body>
+</html>
