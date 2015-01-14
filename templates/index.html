@@ -16,10 +16,10 @@
 
   {% for i in arr %}
       <div class="post">
-        <a href="#">
-          <p class="title">{{i[0]}}</p>
-          <p class="description">{{i[1]}}</p>
-          <img class="img" src="{{i[2]}}">
+        <a href="view/{{i['id']}}">
+          <p class="title">{{i['title']}}</p>
+          <p class="description">{{i['description']}}</p>
+          <img class="img" src="{{i['image']}}">
         </a>
       </div>
       <hr>
